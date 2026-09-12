@@ -12,6 +12,6 @@ jobs:
     steps:
       - name: Deploy application
         run: |
-          cd ~/roadmap.ai
+          cd /opt/roadmap-ai
           git pull origin main
           sudo docker compose up -d --build

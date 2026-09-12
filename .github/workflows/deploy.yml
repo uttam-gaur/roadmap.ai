@@ -12,6 +12,7 @@ jobs:
     steps:
       - name: Deploy application
         run: |
+          git config --global --add safe.directory /opt/roadmap-ai
           cd /opt/roadmap-ai
           git pull origin main
           sudo docker compose up -d --build
